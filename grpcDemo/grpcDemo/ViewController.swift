@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         let service = Proto_UserServiceService(address: hostName)
         // make requests
         let createRequest = makeCreateRequest(age: 10, name: userName, sex: .male)
-        let getRequest = makeGetRequestage(name: userName)
+        let getRequest = makeGetRequest(name: userName)
         let updateRequest = makeUpdateRequest(age: 20, name: userName, sex: .female)
         let deleteRequest = makeDeleteRequest(name: userName)
         let getAllRequest = Proto_GetAllRequest()
@@ -57,7 +57,7 @@ extension ViewController {
         return req
     }
     
-    func makeGetRequestage(name: String) -> Proto_GetRequest {
+    func makeGetRequest(name: String) -> Proto_GetRequest {
         var req = Proto_GetRequest()
         req.name = name
         return req
