@@ -1,0 +1,4 @@
+module BoringSSL {
+    umbrella "/Users/culumn/Desktop/grpcDemo/Sources/BoringSSL/include"
+    export *
+}
